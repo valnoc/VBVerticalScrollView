@@ -1,0 +1,10 @@
+PODS:
+  - VBAutolayout (1.0.0)
+
+DEPENDENCIES:
+  - VBAutolayout (~> 1.0)
+
+SPEC CHECKSUMS:
+  VBAutolayout: 4cc7b566864a52c5e5eb6662a992da0191d2cc67
+
+COCOAPODS: 0.37.1
