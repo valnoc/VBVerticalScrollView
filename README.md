@@ -1,7 +1,7 @@
 VBVerticalScrollView
 ===========
 
-VBVerticalScrollView limits scrolling to only vertical direction by resizong its contentView.
+VBVerticalScrollView limits scrolling to only vertical direction by resizing its contentView.
 
 Use case
 
