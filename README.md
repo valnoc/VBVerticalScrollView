@@ -5,12 +5,10 @@ VBVerticalScrollView limits scrolling to only vertical direction by resizing its
 
 According to Apple docs when working with UIScrollView you should put all views into one contentView which will be added to scrollView itself.
 
-Use case
+### Use case
 
 1. Create view with information to be scrolled (do not forget to set constraints)
 2. verticalScrollView.contentView = myContentView;
-
-ContentView's width is equal to scrollView width.
 
 ## How to install
 Use CocoaPods
