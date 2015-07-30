@@ -26,7 +26,7 @@ According to Apple docs when working with UIScrollView you should put all views 
   s.author           = { "Valeriy Bezuglyy" => "valnocorner@gmail.com" }
   s.source           = { :git => "https://github.com/valnoc/VBVerticalScrollView.git", :tag => "v#{s.version}" }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'VBVerticalScrollView/**/*'
