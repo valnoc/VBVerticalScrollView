@@ -24,7 +24,7 @@
 
 #import "VBVerticalScrollView.h"
 
-#import <VBAutolayout.h>
+#import "VBAutolayout.h"
 
 @implementation VBVerticalScrollView
 
