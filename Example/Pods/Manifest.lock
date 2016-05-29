@@ -1,10 +1,12 @@
 PODS:
-  - VBAutolayout (1.0.0)
+  - VBAutolayout (2.0.0)
 
 DEPENDENCIES:
-  - VBAutolayout (~> 1.0)
+  - VBAutolayout (~> 2.0)
 
 SPEC CHECKSUMS:
-  VBAutolayout: 4cc7b566864a52c5e5eb6662a992da0191d2cc67
+  VBAutolayout: cbf12f615787be0e77214a8fe6e13ceb705d8bfd
 
-COCOAPODS: 0.37.1
+PODFILE CHECKSUM: 7b0237e3349625a142ea8fb4f506ebc27b7bdb0c
+
+COCOAPODS: 1.0.0

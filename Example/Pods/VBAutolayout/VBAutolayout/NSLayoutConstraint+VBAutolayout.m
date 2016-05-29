@@ -27,11 +27,11 @@
 @implementation NSLayoutConstraint (VBAutolayout)
 
 #pragma mark - short
-+ (instancetype) constraintWithItem:(id)view1
-                          attribute:(NSLayoutAttribute)attr1
-                          relatedBy:(NSLayoutRelation)relation
-                             toItem:(id)view2
-                          attribute:(NSLayoutAttribute)attr2 {
++ (nonnull instancetype) constraintWithItem:(nonnull id)view1
+                                  attribute:(NSLayoutAttribute)attr1
+                                  relatedBy:(NSLayoutRelation)relation
+                                     toItem:(nonnull id)view2
+                                  attribute:(NSLayoutAttribute)attr2 {
     return [NSLayoutConstraint constraintWithItem:view1
                                         attribute:attr1
                                         relatedBy:relation
@@ -41,12 +41,12 @@
                                          constant:[self defaultConstant]];
 }
 
-+ (instancetype) constraintWithItem:(id)view1
-                          attribute:(NSLayoutAttribute)attr1
-                          relatedBy:(NSLayoutRelation)relation
-                             toItem:(id)view2
-                          attribute:(NSLayoutAttribute)attr2
-                           constant:(CGFloat)c {
++ (nonnull instancetype) constraintWithItem:(nonnull id)view1
+                                  attribute:(NSLayoutAttribute)attr1
+                                  relatedBy:(NSLayoutRelation)relation
+                                     toItem:(nonnull id)view2
+                                  attribute:(NSLayoutAttribute)attr2
+                                   constant:(CGFloat)c {
     return [NSLayoutConstraint constraintWithItem:view1
                                         attribute:attr1
                                         relatedBy:relation
@@ -56,12 +56,12 @@
                                          constant:c];
 }
 
-+ (instancetype) constraintWithItem:(id)view1
-                          attribute:(NSLayoutAttribute)attr1
-                          relatedBy:(NSLayoutRelation)relation
-                             toItem:(id)view2
-                          attribute:(NSLayoutAttribute)attr2
-                         multiplier:(CGFloat)multiplier {
++ (nonnull instancetype) constraintWithItem:(nonnull id)view1
+                                  attribute:(NSLayoutAttribute)attr1
+                                  relatedBy:(NSLayoutRelation)relation
+                                     toItem:(nonnull id)view2
+                                  attribute:(NSLayoutAttribute)attr2
+                                 multiplier:(CGFloat)multiplier {
     return [NSLayoutConstraint constraintWithItem:view1
                                         attribute:attr1
                                         relatedBy:relation
@@ -79,78 +79,159 @@
     return 0.0f;
 }
 
-#pragma mark - distance to items
-+ (NSArray*) constraintsWithItem:(id)view
-                         topItem:(id) topView
-                         topDist:(NSString*) topDist
-                      bottomItem:(id) bottomView
-                      bottomDist:(NSString*) bottomDist
-                     leadingItem:(id) leadingView
-                     leadingDist:(NSString*) leadingDist
-                    trailingItem:(id) trailingView
-                    trailingDist:(NSString*) trailingDist {
+#pragma mark - layout
++ (nonnull NSDictionary*) constraintsWithItem:(nonnull id) view1
+                                       layout:(nonnull NSDictionary*) layout {
+    NSMutableDictionary* cnstr = [NSMutableDictionary new];
     
-//#warning TODO add params check
-    UIView* superview = ((UIView*)view).superview;
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeTop
+                          attribute2:NSLayoutAttributeBottom
+                                attr:VBAutolayoutAttributeTop
+                              layout:layout];
 
-    NSMutableDictionary* views = [NSMutableDictionary new];
-    views[@"view"] = view;
-    views[@"topView"] = topView ?: superview;
-    views[@"bottomView"] = bottomView ?: superview;
-    views[@"leadingView"] = leadingView ?: superview;
-    views[@"trailingView"] = trailingView ?: superview;
-
-    NSMutableArray* formats = [NSMutableArray new];
-    if (topDist.length) {
-        [formats addObject:[NSString stringWithFormat:@"V:%@-(%@)-[view]",
-                            views[@"topView"] == superview ? @"|" : @"[topView]",
-                            topDist]];
-    }
-    if (bottomDist.length) {
-        [formats addObject:[NSString stringWithFormat:@"V:[view]-(%@)-%@",
-                            bottomDist,
-                            views[@"bottomView"] == superview ? @"|" : @"[bottomView]"]];
-    }
-    if (leadingDist.length) {
-        [formats addObject:[NSString stringWithFormat:@"H:%@-(%@)-[view]",
-                            views[@"leadingView"] == superview  ? @"|" : @"[leadingView]",
-                            leadingDist]];
-    }
-    if (trailingDist.length) {
-        [formats addObject:[NSString stringWithFormat:@"H:[view]-(%@)-%@",
-                            trailingDist,
-                            views[@"trailingView"] == superview  ? @"|" : @"[trailingView]"]];
-    }
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeBottom
+                          attribute2:NSLayoutAttributeTop
+                                attr:VBAutolayoutAttributeBottom
+                              layout:layout];
     
-    NSMutableArray* constraints = [NSMutableArray new];
-    for (NSInteger i = 0; i < formats.count; i++) {
-        NSString* format = formats[i];
-        [constraints addObjectsFromArray:[self constraintsWithVisualFormat:format
-                                                                   options:0
-                                                                   metrics:nil
-                                                                     views:views]];
-    }
-    return constraints;
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeLeading
+                          attribute2:NSLayoutAttributeTrailing
+                                attr:VBAutolayoutAttributeLeading
+                              layout:layout];
+    
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeTrailing
+                          attribute2:NSLayoutAttributeLeading
+                                attr:VBAutolayoutAttributeTrailing
+                              layout:layout];
+    
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeWidth
+                          attribute2:NSLayoutAttributeNotAnAttribute
+                                attr:VBAutolayoutAttributeWidth
+                              layout:layout];
+    
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeHeight
+                          attribute2:NSLayoutAttributeNotAnAttribute
+                                attr:VBAutolayoutAttributeHeight
+                              layout:layout];
+    
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeCenterX
+                          attribute2:NSLayoutAttributeCenterX
+                                attr:VBAutolayoutAttributeCenterX
+                              layout:layout];
+    
+    [self addConstraintsToDictionary:cnstr
+                            withItem:view1
+                          attribute1:NSLayoutAttributeCenterY
+                          attribute2:NSLayoutAttributeCenterY
+                                attr:VBAutolayoutAttributeCenterY
+                              layout:layout];
+
+    return cnstr;
 }
 
-#pragma mark - size
-+ (instancetype) constraintWithItem:(id)view
-                              width:(NSString*)width {
-//#warning TODO add params check
-    return [[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"H:[view(%@)]", width]
-                                                    options:0
-                                                    metrics:nil
-                                                      views:@{@"view": view}]
-            lastObject];
+#pragma mark helpers
++ (void) addConstraintsToDictionary:(NSMutableDictionary*)cnstr
+                           withItem:(id) view1
+                         attribute1:(NSLayoutAttribute)attr1
+                         attribute2:(NSLayoutAttribute)attr2
+                               attr:(NSString*)attr
+                             layout:(id)layout {
+    if (layout[attr]) {
+        NSArray* constraints = [self constraintsWithItem:view1
+                                              attribute1:attr1
+                                              attribute2:attr2
+                                                attrInfo:layout[attr]];
+        cnstr[attr] = constraints.count > 1 ? constraints : constraints.lastObject;
+    }
 }
 
-+ (instancetype) constraintWithItem:(id)view
-                             height:(NSString*)height {
-    return [[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:[view(%@)]", height]
-                                                    options:0
-                                                    metrics:nil
-                                                      views:@{@"view": view}]
-            lastObject];
++ (nonnull NSArray<NSLayoutConstraint*>*) constraintsWithItem:(nonnull id) view1
+                                                   attribute1:(NSLayoutAttribute)attr1
+                                                   attribute2:(NSLayoutAttribute)attr2
+                                                     attrInfo:(id)attrInfo {
+    NSMutableArray<NSLayoutConstraint*>* result = [NSMutableArray new];
+    if ([attrInfo isKindOfClass:[NSString class]]) {
+        attrInfo = @{VBAutolayoutConstant: attrInfo};
+    }
+    if ([attrInfo isKindOfClass:[NSDictionary class]]) {
+        [result addObject:[self constraintWithItem:view1
+                                        attribute1:attr1
+                                        attribute2:attr2
+                                         attrInfo:attrInfo]];
+    }else{
+        for (NSDictionary* info in attrInfo) {
+            [result addObject:[self constraintWithItem:view1
+                                            attribute1:attr1
+                                            attribute2:attr2
+                                              attrInfo:info]];
+        }
+    }
+    return result;
+}
+
++ (nonnull instancetype) constraintWithItem:(nonnull id) view1
+                                 attribute1:(NSLayoutAttribute)attr1
+                                 attribute2:(NSLayoutAttribute)attr2
+                                   attrInfo:(NSDictionary*)attrInfo {
+    UIView* superview = ((UIView*)view1).superview;
+    NSArray<NSNumber*>* cnstInfo = [self parsedLayoutConstant:attrInfo[VBAutolayoutConstant]];
+    //
+    id item = attrInfo[VBAutolayoutItem];
+    NSLayoutRelation relation = [cnstInfo[0] integerValue];
+    double constant = [cnstInfo[1] doubleValue];
+    double priority = [cnstInfo[2] doubleValue];
+    //
+    if (attr2 == NSLayoutAttributeNotAnAttribute) {
+        item = nil;
+    }else if (item == nil) {
+        item = superview;
+        attr2 = attr1;
+        if (attr1 == NSLayoutAttributeTrailing || attr1 == NSLayoutAttributeBottom) {
+            constant = -constant;
+        }
+    }
+    //
+    NSLayoutConstraint* cnstr = [NSLayoutConstraint constraintWithItem:view1
+                                                             attribute:attr1
+                                                             relatedBy:relation
+                                                                toItem:item
+                                                             attribute:attr2
+                                                              constant:constant];
+    cnstr.priority = priority;
+    return cnstr;
+}
+
++ (nonnull NSArray<NSNumber*>*) parsedLayoutConstant:(NSString*) constant {
+    NSArray<NSString*>* comp = [[constant stringByReplacingOccurrencesOfString:@"([><=]*)\\(?(-?\\d*)\\)?@?(\\d*)"
+                                                        withString:@"$1,$2,$3"
+                                                           options:NSRegularExpressionSearch
+                                                             range:NSMakeRange(0, constant.length)]
+                                componentsSeparatedByString:@","];
+    
+    NSLayoutRelation relation = NSLayoutRelationEqual;
+    if ([constant hasPrefix:@">"]) {
+        relation = NSLayoutRelationGreaterThanOrEqual;
+    }else if ([constant hasPrefix:@"<"]) {
+        relation = NSLayoutRelationLessThanOrEqual;
+    }
+    
+    NSInteger value = comp[1].length > 0 ? comp[1].integerValue : 0;
+    NSInteger priority = comp[2].length > 0 ? comp[2].integerValue : 1000;
+    return @[@(relation), @(value), @(priority)];
 }
 
 @end

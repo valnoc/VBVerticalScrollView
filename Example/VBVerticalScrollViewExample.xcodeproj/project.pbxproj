@@ -15,7 +15,7 @@
 		5BC8CCDD1B697E5E005E1230 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC8CCDB1B697E5E005E1230 /* LaunchScreen.xib */; };
 		5BC8CCE91B697E5E005E1230 /* VBVerticalScrollViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8CCE81B697E5E005E1230 /* VBVerticalScrollViewExampleTests.m */; };
 		5BC8CCF51B697E8C005E1230 /* VBVerticalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC8CCF41B697E8C005E1230 /* VBVerticalScrollView.m */; };
-		622373B8A5D08619EA523C50 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 414D7586D651C6ADDB7F4706 /* libPods.a */; };
+		C7125E427CF2C956DAB8BD1B /* libPods-VBVerticalScrollViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B552C5DE91511C9B76B42564 /* libPods-VBVerticalScrollViewExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		414D7586D651C6ADDB7F4706 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		54522C8696C3DC0F8D251E1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		13515D397A468A4798C03DDB /* Pods-VBVerticalScrollViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VBVerticalScrollViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-VBVerticalScrollViewExample/Pods-VBVerticalScrollViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		5BC8CCC91B697E5E005E1230 /* VBVerticalScrollViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBVerticalScrollViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC8CCCD1B697E5E005E1230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC8CCCE1B697E5E005E1230 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,7 +45,8 @@
 		5BC8CCE81B697E5E005E1230 /* VBVerticalScrollViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBVerticalScrollViewExampleTests.m; sourceTree = "<group>"; };
 		5BC8CCF31B697E8C005E1230 /* VBVerticalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBVerticalScrollView.h; sourceTree = "<group>"; };
 		5BC8CCF41B697E8C005E1230 /* VBVerticalScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBVerticalScrollView.m; sourceTree = "<group>"; };
-		DDA151BCA80C4F41A314EA1D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A66F084AC019EC5A6F8E6DC9 /* Pods-VBVerticalScrollViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VBVerticalScrollViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VBVerticalScrollViewExample/Pods-VBVerticalScrollViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B552C5DE91511C9B76B42564 /* libPods-VBVerticalScrollViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VBVerticalScrollViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622373B8A5D08619EA523C50 /* libPods.a in Frameworks */,
+				C7125E427CF2C956DAB8BD1B /* libPods-VBVerticalScrollViewExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,15 +68,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A0C1304505F47A9E33C236B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DDA151BCA80C4F41A314EA1D /* Pods.debug.xcconfig */,
-				54522C8696C3DC0F8D251E1C /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5BC8CCC01B697E5E005E1230 = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +75,8 @@
 				5BC8CCCB1B697E5E005E1230 /* VBVerticalScrollViewExample */,
 				5BC8CCE51B697E5E005E1230 /* VBVerticalScrollViewExampleTests */,
 				5BC8CCCA1B697E5E005E1230 /* Products */,
-				1A0C1304505F47A9E33C236B /* Pods */,
-				8F512F7211DB1C8691FB31B7 /* Frameworks */,
+				89D1074B6FC6868A8C2E7206 /* Pods */,
+				72446B6B25FD755934314006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,12 +140,21 @@
 			path = ../VBVerticalScrollView;
 			sourceTree = "<group>";
 		};
-		8F512F7211DB1C8691FB31B7 /* Frameworks */ = {
+		72446B6B25FD755934314006 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				414D7586D651C6ADDB7F4706 /* libPods.a */,
+				B552C5DE91511C9B76B42564 /* libPods-VBVerticalScrollViewExample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89D1074B6FC6868A8C2E7206 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A66F084AC019EC5A6F8E6DC9 /* Pods-VBVerticalScrollViewExample.debug.xcconfig */,
+				13515D397A468A4798C03DDB /* Pods-VBVerticalScrollViewExample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,11 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BC8CCEC1B697E5E005E1230 /* Build configuration list for PBXNativeTarget "VBVerticalScrollViewExample" */;
 			buildPhases = (
-				D5EFBD45076DAE3E9E30C851 /* Check Pods Manifest.lock */,
+				D59803A7473B34BF51C6BD8A /* 📦 Check Pods Manifest.lock */,
 				5BC8CCC51B697E5E005E1230 /* Sources */,
 				5BC8CCC61B697E5E005E1230 /* Frameworks */,
 				5BC8CCC71B697E5E005E1230 /* Resources */,
-				A32DD5286FE076AA4F5C4FB0 /* Copy Pods Resources */,
+				AB5F0FFD3B34F9BD25D17558 /* 📦 Embed Pods Frameworks */,
+				9179F6F061E8BD3FD1E0B761 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,29 +256,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A32DD5286FE076AA4F5C4FB0 /* Copy Pods Resources */ = {
+		9179F6F061E8BD3FD1E0B761 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VBVerticalScrollViewExample/Pods-VBVerticalScrollViewExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D5EFBD45076DAE3E9E30C851 /* Check Pods Manifest.lock */ = {
+		AB5F0FFD3B34F9BD25D17558 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VBVerticalScrollViewExample/Pods-VBVerticalScrollViewExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59803A7473B34BF51C6BD8A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +433,7 @@
 		};
 		5BC8CCED1B697E5E005E1230 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDA151BCA80C4F41A314EA1D /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A66F084AC019EC5A6F8E6DC9 /* Pods-VBVerticalScrollViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VBVerticalScrollViewExample/Info.plist;
@@ -428,7 +444,7 @@
 		};
 		5BC8CCEE1B697E5E005E1230 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54522C8696C3DC0F8D251E1C /* Pods.release.xcconfig */;
+			baseConfigurationReference = 13515D397A468A4798C03DDB /* Pods-VBVerticalScrollViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VBVerticalScrollViewExample/Info.plist;

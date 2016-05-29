@@ -29,17 +29,36 @@
 @implementation UIView (VBAutolayout)
 
 #pragma mark - addSubview
-- (void) addSubviewAutolayoutReady:(UIView *)view {
+- (void) addSubviewAutolayoutReady:(nonnull UIView *)view {
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:view];
 }
 
+- (nonnull NSDictionary*) addSubview:(nonnull UIView *)view
+                          withLayout:(nonnull NSDictionary*)layout {
+    [self addSubviewAutolayoutReady:view];
+    
+    NSDictionary* dict = [NSLayoutConstraint constraintsWithItem:view
+                                                          layout:layout];
+    NSMutableArray* cnstr = [NSMutableArray new];
+    [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[NSLayoutConstraint class]]) {
+            [cnstr addObject:obj];
+        }else{
+            [cnstr addObjectsFromArray:obj];
+        }
+    }];
+    [self addConstraintsAndLayoutSubviews:cnstr];
+
+    return dict;
+}
+
 #pragma mark - constraints
-- (NSLayoutConstraint*) addConstraintAndLayoutSubviews:(NSLayoutConstraint*) constraint {
+- (nonnull NSLayoutConstraint*) addConstraintAndLayoutSubviews:(nonnull NSLayoutConstraint*) constraint {
     return [[self addConstraintsAndLayoutSubviews:@[constraint]]
             lastObject];
 }
-- (NSArray*) addConstraintsAndLayoutSubviews:(NSArray *)constraints {
+- (nonnull NSArray<NSLayoutConstraint*>*) addConstraintsAndLayoutSubviews:(nonnull NSArray<NSLayoutConstraint*>*)constraints {
     [self addConstraints:constraints];
     [self setNeedsLayout];
     [self layoutIfNeeded];

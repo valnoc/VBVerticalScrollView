@@ -24,6 +24,20 @@
 
 #import <UIKit/UIKit.h>
 
+#define VBAutolayoutAttributeTop        @"VBAutolayoutAttributeTop"
+#define VBAutolayoutAttributeBottom     @"VBAutolayoutAttributeBottom"
+#define VBAutolayoutAttributeLeading    @"VBAutolayoutAttributeLeading"
+#define VBAutolayoutAttributeTrailing   @"VBAutolayoutAttributeTrailing"
+
+#define VBAutolayoutAttributeWidth      @"VBAutolayoutAttributeWidth"
+#define VBAutolayoutAttributeHeight     @"VBAutolayoutAttributeHeight"
+
+#define VBAutolayoutAttributeCenterX    @"VBAutolayoutAttributeCenterX"
+#define VBAutolayoutAttributeCenterY    @"VBAutolayoutAttributeCenterY"
+
+#define VBAutolayoutItem        @"VBAutolayoutItem"
+#define VBAutolayoutConstant    @"VBAutolayoutConstant"
+
 @interface NSLayoutConstraint (VBAutolayout)
 
 #pragma mark - short
@@ -32,85 +46,79 @@
  *  @see constraintWithItem:attribute:relatedBy:toItem:attribute:multiplier:constant: <br>
  *  <b>Default:</b> multiplier:1 constant:0
  */
-+ (instancetype) constraintWithItem:(id)view1
-                          attribute:(NSLayoutAttribute)attr1
-                          relatedBy:(NSLayoutRelation)relation
-                             toItem:(id)view2
-                          attribute:(NSLayoutAttribute)attr2;
++ (nonnull instancetype) constraintWithItem:(nonnull id)view1
+                                  attribute:(NSLayoutAttribute)attr1
+                                  relatedBy:(NSLayoutRelation)relation
+                                     toItem:(nonnull id)view2
+                                  attribute:(NSLayoutAttribute)attr2;
 
 /**
  *  Short variant.
  *  @see constraintWithItem:attribute:relatedBy:toItem:attribute:multiplier:constant: <br>
  *  <b>Default:</b> multiplier:1 constant:0
  */
-+ (instancetype) constraintWithItem:(id)view1
-                          attribute:(NSLayoutAttribute)attr1
-                          relatedBy:(NSLayoutRelation)relation
-                             toItem:(id)view2
-                          attribute:(NSLayoutAttribute)attr2
-                           constant:(CGFloat)c;
++ (nonnull instancetype) constraintWithItem:(nonnull id)view1
+                                  attribute:(NSLayoutAttribute)attr1
+                                  relatedBy:(NSLayoutRelation)relation
+                                     toItem:(nonnull id)view2
+                                  attribute:(NSLayoutAttribute)attr2
+                                   constant:(CGFloat)c;
 
 /**
  *  Short variant.
  *  @see constraintWithItem:attribute:relatedBy:toItem:attribute:multiplier:constant: <br>
  *  <b>Default:</b> multiplier:1 constant:0
  */
-+ (instancetype) constraintWithItem:(id)view1
-                          attribute:(NSLayoutAttribute)attr1
-                          relatedBy:(NSLayoutRelation)relation
-                             toItem:(id)view2
-                          attribute:(NSLayoutAttribute)attr2
-                         multiplier:(CGFloat)multiplier;
++ (nonnull instancetype) constraintWithItem:(nonnull id)view1
+                                  attribute:(NSLayoutAttribute)attr1
+                                  relatedBy:(NSLayoutRelation)relation
+                                     toItem:(nonnull id)view2
+                                  attribute:(NSLayoutAttribute)attr2
+                                 multiplier:(CGFloat)multiplier;
 
-#pragma mark - distance to items
+#pragma mark - layout
 /**
- *  Creates constraints for item to neightbours.
- *
- *  @param view         item
- *  @param topView      neighbour item or nil for superview
- *  @param topDist      @"100", @">=100", @"<100", @"100@999" or nil if not needed
- *  @param bottomView   neighbour item or nil for superview
- *  @param bottomDist   @"100", @">=100", @"<100", @"100@999" or nil if not needed
- *  @param leadingView  neighbour item or nil for superview
- *  @param leadingDist  @"100", @">=100", @"<100", @"100@999" or nil if not needed
- *  @param trailingView neighbour item or nil for superview
- *  @param trailingDist @"100", @">=100", @"<100", @"100@999" or nil if not needed
- *
- *  @return Created constraints in order [top, bottom, leading, trailing]. <br>
- *  Array.count = 0..4 according to passed params. <br>
- *  For example, [top, trailing] or [top, bottom, trailing]
- */
-+ (NSArray*) constraintsWithItem:(id)view
-                         topItem:(id) topView
-                         topDist:(NSString*) topDist
-                      bottomItem:(id) bottomView
-                      bottomDist:(NSString*) bottomDist
-                     leadingItem:(id) leadingView
-                     leadingDist:(NSString*) leadingDist
-                    trailingItem:(id) trailingView
-                    trailingDist:(NSString*) trailingDist;
+ Create constraints for item based on layout dictionary.
+ Constraints are created only for VBAutolayoutAttribute-s contained in layout dictionary. Attribute is ignored if no VBAutolayoutConstant value was given.
+ 
+ Layout dictionary format:
+ @{VBAutolayoutAttribute: <1>,
+   VBAutolayoutAttribute: <2>,
+   VBAutolayoutAttribute: <3>
+ }
 
-#pragma mark - size
-/**
- *  Creates constraint for item width
- *
- *  @param view  item
- *  @param width @"100", @">=100", @"<100", @"100@999"
- *
- *  @return Created constraint
- */
-+ (instancetype) constraintWithItem:(id)view
-                              width:(NSString*)width;
+ <1> =  <const>
+ 
+ <2> =  @{VBAutolayoutItem: <item>,
+          VBAutolayoutConstant: <const>}
+ 
+ <3> =  @[<1>, <2>, ...]
+ 
+ <item> is a view2 in constraint. If no <item> specified, then superview is used and constraint is interpreted as a constraint to view container.
+ <const> is a string with the same format as could be used for Visual Format Constraints Creation
+    <relation><constant>@<priority>, ex. 10, ==10, >=10, <=10, 10@999, >=10@999, etc.
+    <relation> =    1) <, <= for <=
+                    2) >, >= for >=
+                    3) =, == for ==
 
-/**
- *  Creates constraint for item height
- *
- *  @param view   item
- *  @param height @"100", @">=100", @"<100", @"100@999"
- *
- *  @return Created constraint
+ Several constraints can be combined for one attribute using variant <3>.
+ 
+ 
+ Examples,
+ 
+ 1) distance greater or equal then 10 from item top to __someView__ bottom with 999 priority
+ VBAutolayoutAttributeTop: @{VBAutolayoutItem: __someView__,
+                             VBAutolayoutConstant: @">=10@999"}
+
+ 2) distance equal to 0 from item leading to __someView__ trailing
+ VBAutolayoutAttributeLeading: @{VBAutolayoutItem: __someView__}
+ 
+ 2) distance equal to 0 from item leading to container leading
+ VBAutolayoutAttributeLeading: @"0"
+ 
+ @return Created constraints as NSDictionary. Keys are VBAutolayoutAttribute-s. Values are NSLayoutConstraint* or NSArray<NSLayoutConstraint*>* depending on given layout.
  */
-+ (instancetype) constraintWithItem:(id)view
-                             height:(NSString*)height;
++ (nonnull NSDictionary*) constraintsWithItem:(nonnull id) view1
+                                       layout:(nonnull NSDictionary*) layout;
 
 @end

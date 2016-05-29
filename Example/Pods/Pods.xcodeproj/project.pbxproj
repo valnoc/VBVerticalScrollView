@@ -7,363 +7,273 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A677204716B5D4B4FD63E8E /* Pods-VBAutolayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF47B23328F7B6B5796112 /* Pods-VBAutolayout-dummy.m */; };
-		67596002CF09BF0A2ABF58F9 /* VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E07EC2AAFA58D753A57EF5 /* VBAutolayout.h */; };
-		6BD7DEF55A57F83C63561BF0 /* NSLayoutConstraint+VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EFBCB58B491E089FAB86B8F /* NSLayoutConstraint+VBAutolayout.h */; };
-		74C34A0EAF50C36999C5044B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A47800D7868A49351DEC9E9 /* Foundation.framework */; };
-		A36362264BDDDEDFECE2D345 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA27879847CED54BE34F9E1C /* Pods-dummy.m */; };
-		D512E9B24BACB7D58264F364 /* UIView+VBAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB36684AFE9D72CBE94B133 /* UIView+VBAutolayout.m */; };
-		D7A7D6E41BE39CC079687B12 /* UIView+VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F31D9B91841C3369AE90690 /* UIView+VBAutolayout.h */; };
-		E63180CAF43F55BE60DAEE0F /* NSLayoutConstraint+VBAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1687C962C6111EF79298FD8D /* NSLayoutConstraint+VBAutolayout.m */; };
-		EA5835726059B0BD8FA2A8B8 /* UIView+VBAutolayoutConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9473B40F021A111BB32D55 /* UIView+VBAutolayoutConvenience.h */; };
-		EC5B015ECEACAD39EB16608A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A47800D7868A49351DEC9E9 /* Foundation.framework */; };
-		F1B500F925FD25F98B6BA938 /* UIView+VBAutolayoutConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9F3CF6803D12C882275BE2 /* UIView+VBAutolayoutConvenience.m */; };
+		323DE049EEC487D3B3398E0D4AF69083 /* VBAutolayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59948FA2B6FCFD1382477E6DA485B3D9 /* VBAutolayout-dummy.m */; };
+		4A4944D1DD8F5A871BD4446B9697F34E /* Pods-VBVerticalScrollViewExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 331CAD80FF9B592F689298C6150A3704 /* Pods-VBVerticalScrollViewExample-dummy.m */; };
+		51C2F6F2F53E2626C8CA8DC3E28D93C8 /* VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FD67E0805DAD2E691785ED7379BB4875 /* VBAutolayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		565014847FCCDC125F5683399B054F75 /* NSLayoutConstraint+VBAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBE0C48E3A6592E24655A1674959CD /* NSLayoutConstraint+VBAutolayout.m */; };
+		5E73440AED115E9E010AC4363B3D5DDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		70671C9D898834E4DD37DBFB0CF8F865 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B5A8CA739F5CC14AB0A6841881469762 /* NSLayoutConstraint+VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A12F9467EC20A3F3D370CC1DEB2861 /* NSLayoutConstraint+VBAutolayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75C9E1F11CCA2E09729B435FABB9FF6 /* UIView+VBAutolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD47B224DEE22BACB9ACB1E77A9A7C4 /* UIView+VBAutolayout.m */; };
+		FB9EB8D880F4454C4F6F8457A26AEB21 /* UIView+VBAutolayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C105D9F9FB328CA7F24CB0D9C414703 /* UIView+VBAutolayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A54E9BFAD3387F7B3C23F488 /* PBXContainerItemProxy */ = {
+		A6BDAEFF74B54311DB77085158C21F36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CF58F5628F0A0571C2CBD45C /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FB665D6C13314D435118E047;
-			remoteInfo = "Pods-VBAutolayout";
+			remoteGlobalIDString = 56C48E78A27EADAEECA9199A678BE639;
+			remoteInfo = VBAutolayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02CF47B23328F7B6B5796112 /* Pods-VBAutolayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VBAutolayout-dummy.m"; sourceTree = "<group>"; };
-		1687C962C6111EF79298FD8D /* NSLayoutConstraint+VBAutolayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+VBAutolayout.m"; path = "VBAutolayout/NSLayoutConstraint+VBAutolayout.m"; sourceTree = "<group>"; };
-		1F67D33CF583FFD848081646 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2BFED9D8EC72AB0CAE7A8325 /* Pods-VBAutolayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VBAutolayout-prefix.pch"; sourceTree = "<group>"; };
-		2F31D9B91841C3369AE90690 /* UIView+VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+VBAutolayout.h"; path = "VBAutolayout/UIView+VBAutolayout.h"; sourceTree = "<group>"; };
-		31A5A87CD5953A713DFF70D2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3B13531E8477137A5C01E7F4 /* Pods-VBAutolayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VBAutolayout-Private.xcconfig"; sourceTree = "<group>"; };
-		3EFBCB58B491E089FAB86B8F /* NSLayoutConstraint+VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+VBAutolayout.h"; path = "VBAutolayout/NSLayoutConstraint+VBAutolayout.h"; sourceTree = "<group>"; };
-		408420D6D595A61E00CFE7D0 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		44CF67F56C6E59B0B3179C4C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		4FB36684AFE9D72CBE94B133 /* UIView+VBAutolayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+VBAutolayout.m"; path = "VBAutolayout/UIView+VBAutolayout.m"; sourceTree = "<group>"; };
-		51D7C31E7509F13030CC0CFF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		53E07EC2AAFA58D753A57EF5 /* VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VBAutolayout.h; path = VBAutolayout/VBAutolayout.h; sourceTree = "<group>"; };
-		8A9473B40F021A111BB32D55 /* UIView+VBAutolayoutConvenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+VBAutolayoutConvenience.h"; path = "VBAutolayout/UIView+VBAutolayoutConvenience.h"; sourceTree = "<group>"; };
-		9A47800D7868A49351DEC9E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B015C2A2C6757584FEA1E3BE /* libPods-VBAutolayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VBAutolayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B77644FD13C22BDFFEA48D90 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		D005F2842793C6B3E6A7FA3D /* Pods-VBAutolayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VBAutolayout.xcconfig"; sourceTree = "<group>"; };
-		E279ED57FBF6EBE06AC5B0E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		EA27879847CED54BE34F9E1C /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		F2DE258E206379A1D37AE0E0 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		FB9F3CF6803D12C882275BE2 /* UIView+VBAutolayoutConvenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+VBAutolayoutConvenience.m"; path = "VBAutolayout/UIView+VBAutolayoutConvenience.m"; sourceTree = "<group>"; };
+		1E109D20704C5F1F5E7F1DC8FEA7121C /* VBAutolayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VBAutolayout-prefix.pch"; sourceTree = "<group>"; };
+		2C105D9F9FB328CA7F24CB0D9C414703 /* UIView+VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+VBAutolayout.h"; path = "VBAutolayout/UIView+VBAutolayout.h"; sourceTree = "<group>"; };
+		331CAD80FF9B592F689298C6150A3704 /* Pods-VBVerticalScrollViewExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VBVerticalScrollViewExample-dummy.m"; sourceTree = "<group>"; };
+		3A1A5A56652F0F4C09F0A6E3546120A8 /* Pods-VBVerticalScrollViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VBVerticalScrollViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		4BDBE0C48E3A6592E24655A1674959CD /* NSLayoutConstraint+VBAutolayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+VBAutolayout.m"; path = "VBAutolayout/NSLayoutConstraint+VBAutolayout.m"; sourceTree = "<group>"; };
+		59948FA2B6FCFD1382477E6DA485B3D9 /* VBAutolayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VBAutolayout-dummy.m"; sourceTree = "<group>"; };
+		6AD47B224DEE22BACB9ACB1E77A9A7C4 /* UIView+VBAutolayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+VBAutolayout.m"; path = "VBAutolayout/UIView+VBAutolayout.m"; sourceTree = "<group>"; };
+		76A12F9467EC20A3F3D370CC1DEB2861 /* NSLayoutConstraint+VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+VBAutolayout.h"; path = "VBAutolayout/NSLayoutConstraint+VBAutolayout.h"; sourceTree = "<group>"; };
+		7FC72975A38166044618A6897400FA20 /* Pods-VBVerticalScrollViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VBVerticalScrollViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+		848F7DBAFB5F12B0F5C6380EC9DA4CC8 /* libPods-VBVerticalScrollViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VBVerticalScrollViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8974F6F94F1DF5A110EB4DBADA225662 /* libVBAutolayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVBAutolayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C95D8278AA0A9BB827E2760C833F2BF8 /* VBAutolayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VBAutolayout.xcconfig; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F5A78752A231CC7E13F7469A5E785FCA /* Pods-VBVerticalScrollViewExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VBVerticalScrollViewExample-resources.sh"; sourceTree = "<group>"; };
+		F9C25BDDBC3F8BCCFF8165AD487CAAAD /* Pods-VBVerticalScrollViewExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VBVerticalScrollViewExample-frameworks.sh"; sourceTree = "<group>"; };
+		FB425C18547DB0E64B59352F635EC98C /* Pods-VBVerticalScrollViewExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VBVerticalScrollViewExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD67E0805DAD2E691785ED7379BB4875 /* VBAutolayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VBAutolayout.h; path = VBAutolayout/VBAutolayout.h; sourceTree = "<group>"; };
+		FEA73C4117BEFA70EFF08AB9497A2475 /* Pods-VBVerticalScrollViewExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VBVerticalScrollViewExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C2AFFCBEC9081EE44F1A6BC /* Frameworks */ = {
+		5C1148CE9798D5C9E932D8E1B57A1B97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B015ECEACAD39EB16608A /* Foundation.framework in Frameworks */,
+				5E73440AED115E9E010AC4363B3D5DDF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAFA8DDD49498B9C82CFBACE /* Frameworks */ = {
+		F67267537D16EE0011E3A1C5C4FC130A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74C34A0EAF50C36999C5044B /* Foundation.framework in Frameworks */,
+				70671C9D898834E4DD37DBFB0CF8F865 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CB9CC00B24CD0BE9D8A1A31 /* Products */ = {
+		29DE21D44CD30217470E80FC773E4941 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				51D7C31E7509F13030CC0CFF /* libPods.a */,
-				B015C2A2C6757584FEA1E3BE /* libPods-VBAutolayout.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		50A3E121C4A4BC6FE2E25774 = {
-			isa = PBXGroup;
-			children = (
-				31A5A87CD5953A713DFF70D2 /* Podfile */,
-				72CD2D90ABF7D0E2B6B82604 /* Frameworks */,
-				73E3D0F04871F013AE417D8B /* Pods */,
-				2CB9CC00B24CD0BE9D8A1A31 /* Products */,
-				CC3AE61041AA465F63A4263C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		72CD2D90ABF7D0E2B6B82604 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA12DC9EE8C65F68755C49D1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		73E3D0F04871F013AE417D8B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FA9767976CB7B775145819CB /* VBAutolayout */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		976B5164B8A76089091DA277 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1F67D33CF583FFD848081646 /* Pods-acknowledgements.markdown */,
-				B77644FD13C22BDFFEA48D90 /* Pods-acknowledgements.plist */,
-				EA27879847CED54BE34F9E1C /* Pods-dummy.m */,
-				408420D6D595A61E00CFE7D0 /* Pods-environment.h */,
-				F2DE258E206379A1D37AE0E0 /* Pods-resources.sh */,
-				E279ED57FBF6EBE06AC5B0E4 /* Pods.debug.xcconfig */,
-				44CF67F56C6E59B0B3179C4C /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		CC3AE61041AA465F63A4263C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				976B5164B8A76089091DA277 /* Pods */,
+				879402F31066D7EC5507B02A10DE6031 /* Pods-VBVerticalScrollViewExample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D2DC118EF153CEA5085EAD9B /* Support Files */ = {
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D005F2842793C6B3E6A7FA3D /* Pods-VBAutolayout.xcconfig */,
-				3B13531E8477137A5C01E7F4 /* Pods-VBAutolayout-Private.xcconfig */,
-				02CF47B23328F7B6B5796112 /* Pods-VBAutolayout-dummy.m */,
-				2BFED9D8EC72AB0CAE7A8325 /* Pods-VBAutolayout-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-VBAutolayout";
-			sourceTree = "<group>";
-		};
-		FA12DC9EE8C65F68755C49D1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9A47800D7868A49351DEC9E9 /* Foundation.framework */,
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FA9767976CB7B775145819CB /* VBAutolayout */ = {
+		690F90701D8E6C0E77E5A0ED21D9614A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3EFBCB58B491E089FAB86B8F /* NSLayoutConstraint+VBAutolayout.h */,
-				1687C962C6111EF79298FD8D /* NSLayoutConstraint+VBAutolayout.m */,
-				2F31D9B91841C3369AE90690 /* UIView+VBAutolayout.h */,
-				4FB36684AFE9D72CBE94B133 /* UIView+VBAutolayout.m */,
-				8A9473B40F021A111BB32D55 /* UIView+VBAutolayoutConvenience.h */,
-				FB9F3CF6803D12C882275BE2 /* UIView+VBAutolayoutConvenience.m */,
-				53E07EC2AAFA58D753A57EF5 /* VBAutolayout.h */,
-				D2DC118EF153CEA5085EAD9B /* Support Files */,
+				C95D8278AA0A9BB827E2760C833F2BF8 /* VBAutolayout.xcconfig */,
+				59948FA2B6FCFD1382477E6DA485B3D9 /* VBAutolayout-dummy.m */,
+				1E109D20704C5F1F5E7F1DC8FEA7121C /* VBAutolayout-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VBAutolayout";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D1FF1B1677376F01CB48CC7298162473 /* Pods */,
+				ECFB9ED217B29F62A8AECB0B0CF433EC /* Products */,
+				29DE21D44CD30217470E80FC773E4941 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		879402F31066D7EC5507B02A10DE6031 /* Pods-VBVerticalScrollViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				FEA73C4117BEFA70EFF08AB9497A2475 /* Pods-VBVerticalScrollViewExample-acknowledgements.markdown */,
+				FB425C18547DB0E64B59352F635EC98C /* Pods-VBVerticalScrollViewExample-acknowledgements.plist */,
+				331CAD80FF9B592F689298C6150A3704 /* Pods-VBVerticalScrollViewExample-dummy.m */,
+				F9C25BDDBC3F8BCCFF8165AD487CAAAD /* Pods-VBVerticalScrollViewExample-frameworks.sh */,
+				F5A78752A231CC7E13F7469A5E785FCA /* Pods-VBVerticalScrollViewExample-resources.sh */,
+				7FC72975A38166044618A6897400FA20 /* Pods-VBVerticalScrollViewExample.debug.xcconfig */,
+				3A1A5A56652F0F4C09F0A6E3546120A8 /* Pods-VBVerticalScrollViewExample.release.xcconfig */,
+			);
+			name = "Pods-VBVerticalScrollViewExample";
+			path = "Target Support Files/Pods-VBVerticalScrollViewExample";
+			sourceTree = "<group>";
+		};
+		9896498CC0B3BA13FED31717493EF75B /* VBAutolayout */ = {
+			isa = PBXGroup;
+			children = (
+				76A12F9467EC20A3F3D370CC1DEB2861 /* NSLayoutConstraint+VBAutolayout.h */,
+				4BDBE0C48E3A6592E24655A1674959CD /* NSLayoutConstraint+VBAutolayout.m */,
+				2C105D9F9FB328CA7F24CB0D9C414703 /* UIView+VBAutolayout.h */,
+				6AD47B224DEE22BACB9ACB1E77A9A7C4 /* UIView+VBAutolayout.m */,
+				FD67E0805DAD2E691785ED7379BB4875 /* VBAutolayout.h */,
+				690F90701D8E6C0E77E5A0ED21D9614A /* Support Files */,
 			);
 			path = VBAutolayout;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1FF1B1677376F01CB48CC7298162473 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9896498CC0B3BA13FED31717493EF75B /* VBAutolayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECFB9ED217B29F62A8AECB0B0CF433EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848F7DBAFB5F12B0F5C6380EC9DA4CC8 /* libPods-VBVerticalScrollViewExample.a */,
+				8974F6F94F1DF5A110EB4DBADA225662 /* libVBAutolayout.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3E50CCD2A5E9E4A9D7D806C0 /* Headers */ = {
+		20F3201896A263B76D3409A4253CFBFA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD7DEF55A57F83C63561BF0 /* NSLayoutConstraint+VBAutolayout.h in Headers */,
-				D7A7D6E41BE39CC079687B12 /* UIView+VBAutolayout.h in Headers */,
-				EA5835726059B0BD8FA2A8B8 /* UIView+VBAutolayoutConvenience.h in Headers */,
-				67596002CF09BF0A2ABF58F9 /* VBAutolayout.h in Headers */,
+				B5A8CA739F5CC14AB0A6841881469762 /* NSLayoutConstraint+VBAutolayout.h in Headers */,
+				FB9EB8D880F4454C4F6F8457A26AEB21 /* UIView+VBAutolayout.h in Headers */,
+				51C2F6F2F53E2626C8CA8DC3E28D93C8 /* VBAutolayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		051D0D7ADA385BBA7129D3F2 /* Pods */ = {
+		40F336AD4D608FD58B179F75F0D0165E /* Pods-VBVerticalScrollViewExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00273D80F629A8AA30A041AC /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 60628B31120CD1BC65E966F5E3EC58FD /* Build configuration list for PBXNativeTarget "Pods-VBVerticalScrollViewExample" */;
 			buildPhases = (
-				F8977788A4E04BE53FC2AE15 /* Sources */,
-				FAFA8DDD49498B9C82CFBACE /* Frameworks */,
+				C1B2153E5AECCC10E4A550612EFE1087 /* Sources */,
+				F67267537D16EE0011E3A1C5C4FC130A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				732E8A85B8B0FEEC1F30B4A8 /* PBXTargetDependency */,
+				6D5892614C87E1967EBC9AAA828A2A29 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 51D7C31E7509F13030CC0CFF /* libPods.a */;
+			name = "Pods-VBVerticalScrollViewExample";
+			productName = "Pods-VBVerticalScrollViewExample";
+			productReference = 848F7DBAFB5F12B0F5C6380EC9DA4CC8 /* libPods-VBVerticalScrollViewExample.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		FB665D6C13314D435118E047 /* Pods-VBAutolayout */ = {
+		56C48E78A27EADAEECA9199A678BE639 /* VBAutolayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F154E656D4CE96BFE24FF89D /* Build configuration list for PBXNativeTarget "Pods-VBAutolayout" */;
+			buildConfigurationList = EB69C44B0D9762457778548CD6A0FC78 /* Build configuration list for PBXNativeTarget "VBAutolayout" */;
 			buildPhases = (
-				4353BC7094078A2A8DD7B6B7 /* Sources */,
-				0C2AFFCBEC9081EE44F1A6BC /* Frameworks */,
-				3E50CCD2A5E9E4A9D7D806C0 /* Headers */,
+				C9642D826B5BF7FEB9AF1FD142F7D391 /* Sources */,
+				5C1148CE9798D5C9E932D8E1B57A1B97 /* Frameworks */,
+				20F3201896A263B76D3409A4253CFBFA /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-VBAutolayout";
-			productName = "Pods-VBAutolayout";
-			productReference = B015C2A2C6757584FEA1E3BE /* libPods-VBAutolayout.a */;
+			name = VBAutolayout;
+			productName = VBAutolayout;
+			productReference = 8974F6F94F1DF5A110EB4DBADA225662 /* libVBAutolayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CF58F5628F0A0571C2CBD45C /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = E0DD7327FD305C0952C0DF10 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 50A3E121C4A4BC6FE2E25774;
-			productRefGroup = 2CB9CC00B24CD0BE9D8A1A31 /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = ECFB9ED217B29F62A8AECB0B0CF433EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				051D0D7ADA385BBA7129D3F2 /* Pods */,
-				FB665D6C13314D435118E047 /* Pods-VBAutolayout */,
+				40F336AD4D608FD58B179F75F0D0165E /* Pods-VBVerticalScrollViewExample */,
+				56C48E78A27EADAEECA9199A678BE639 /* VBAutolayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4353BC7094078A2A8DD7B6B7 /* Sources */ = {
+		C1B2153E5AECCC10E4A550612EFE1087 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63180CAF43F55BE60DAEE0F /* NSLayoutConstraint+VBAutolayout.m in Sources */,
-				4A677204716B5D4B4FD63E8E /* Pods-VBAutolayout-dummy.m in Sources */,
-				D512E9B24BACB7D58264F364 /* UIView+VBAutolayout.m in Sources */,
-				F1B500F925FD25F98B6BA938 /* UIView+VBAutolayoutConvenience.m in Sources */,
+				4A4944D1DD8F5A871BD4446B9697F34E /* Pods-VBVerticalScrollViewExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8977788A4E04BE53FC2AE15 /* Sources */ = {
+		C9642D826B5BF7FEB9AF1FD142F7D391 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A36362264BDDDEDFECE2D345 /* Pods-dummy.m in Sources */,
+				565014847FCCDC125F5683399B054F75 /* NSLayoutConstraint+VBAutolayout.m in Sources */,
+				F75C9E1F11CCA2E09729B435FABB9FF6 /* UIView+VBAutolayout.m in Sources */,
+				323DE049EEC487D3B3398E0D4AF69083 /* VBAutolayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		732E8A85B8B0FEEC1F30B4A8 /* PBXTargetDependency */ = {
+		6D5892614C87E1967EBC9AAA828A2A29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-VBAutolayout";
-			target = FB665D6C13314D435118E047 /* Pods-VBAutolayout */;
-			targetProxy = A54E9BFAD3387F7B3C23F488 /* PBXContainerItemProxy */;
+			name = VBAutolayout;
+			target = 56C48E78A27EADAEECA9199A678BE639 /* VBAutolayout */;
+			targetProxy = A6BDAEFF74B54311DB77085158C21F36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		483D3BA0F7788EB6F2995E6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E279ED57FBF6EBE06AC5B0E4 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		49EA67FE339E54E0B5E166AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B13531E8477137A5C01E7F4 /* Pods-VBAutolayout-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-VBAutolayout/Pods-VBAutolayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7CB79A0130C85C0A70F75674 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B13531E8477137A5C01E7F4 /* Pods-VBAutolayout-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-VBAutolayout/Pods-VBAutolayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A582C5C6460784EE654E8726 /* Release */ = {
+		2588EA364419D831347938453F4F6DE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BC424FFD1926323FDE2D8EF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -378,10 +288,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -399,16 +311,122 @@
 			};
 			name = Debug;
 		};
-		BFDB9A6F7651D981269AA32D /* Release */ = {
+		2A4411D2A8DABAF1645FE25C31FDE06D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44CF67F56C6E59B0B3179C4C /* Pods.release.xcconfig */;
+			baseConfigurationReference = 7FC72975A38166044618A6897400FA20 /* Pods-VBVerticalScrollViewExample.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		61AD4929AC3440F8BFA0595E8DCD90C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		970C8CB6356A66C9A3ECE207584324DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95D8278AA0A9BB827E2760C833F2BF8 /* VBAutolayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VBAutolayout/VBAutolayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F8E44C9155C8417F2E05056C9B3843BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95D8278AA0A9BB827E2760C833F2BF8 /* VBAutolayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VBAutolayout/VBAutolayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FBA6C466DCAE2D6AE6C603EEF9CE662F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1A5A56652F0F4C09F0A6E3546120A8 /* Pods-VBVerticalScrollViewExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -418,34 +436,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00273D80F629A8AA30A041AC /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				483D3BA0F7788EB6F2995E6B /* Debug */,
-				BFDB9A6F7651D981269AA32D /* Release */,
+				2588EA364419D831347938453F4F6DE5 /* Debug */,
+				61AD4929AC3440F8BFA0595E8DCD90C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0DD7327FD305C0952C0DF10 /* Build configuration list for PBXProject "Pods" */ = {
+		60628B31120CD1BC65E966F5E3EC58FD /* Build configuration list for PBXNativeTarget "Pods-VBVerticalScrollViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC424FFD1926323FDE2D8EF9 /* Debug */,
-				A582C5C6460784EE654E8726 /* Release */,
+				2A4411D2A8DABAF1645FE25C31FDE06D /* Debug */,
+				FBA6C466DCAE2D6AE6C603EEF9CE662F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F154E656D4CE96BFE24FF89D /* Build configuration list for PBXNativeTarget "Pods-VBAutolayout" */ = {
+		EB69C44B0D9762457778548CD6A0FC78 /* Build configuration list for PBXNativeTarget "VBAutolayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7CB79A0130C85C0A70F75674 /* Debug */,
-				49EA67FE339E54E0B5E166AB /* Release */,
+				970C8CB6356A66C9A3ECE207584324DD /* Debug */,
+				F8E44C9155C8417F2E05056C9B3843BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CF58F5628F0A0571C2CBD45C /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

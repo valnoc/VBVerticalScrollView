@@ -1,3 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'VBAutolayout', '~> 1.0'
+target 'VBVerticalScrollViewExample' do
+	pod 'VBAutolayout', '~> 2.0'
+end
