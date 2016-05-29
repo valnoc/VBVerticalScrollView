@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "VBVerticalScrollView"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "VBVerticalScrollView limits scrolling to only vertical direction by resizing its contentView."
   s.description      = <<-DESC
 VBVerticalScrollView limits scrolling to only vertical direction by resizing its contentView.
@@ -31,5 +31,5 @@ According to Apple docs when working with UIScrollView you should put all views 
 
   s.source_files = 'VBVerticalScrollView/**/*'
 
-  s.dependency 'VBAutolayout', '~> 1.0'
+  s.dependency 'VBAutolayout', '~> 2.0'
 end
